@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  background-color: rgb(8, 8, 59);  
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+main{
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 100px 100px 100px;
+    gap: 10px;
+    grid-template-areas: 
+    'a a b'
+    'a a b'
+    'c d d'
+    'c e e'
+    ;
+}
+main div{
+    padding: 2em;
+    text-align: center;
+}
+.con1{
+    background-color: rgb(201, 7, 7);
+    grid-area: a;
+    
+}
+.con2{
+    background-color: rgb(230, 154, 13);
+    grid-area: b;
+}
+.con3{
+    background-color: rgb(44, 150, 12);
+    grid-area: c;
+}
+.con4{
+    background-color: rgb(10, 10, 168);
+    grid-area: d;
+}
+.con5{
+    background-color: rgb(23, 171, 230);
+    grid-area: e;
+}
